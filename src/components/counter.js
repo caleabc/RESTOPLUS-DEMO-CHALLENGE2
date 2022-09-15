@@ -43,7 +43,7 @@ function Counter() {
 
     // communicate to firebase
 
-    let id;
+    let id = undefined;
     const querySnapshot = await getDocs(collection(db, "counter"));
     querySnapshot.forEach((doc) => {
       id = doc.id;
